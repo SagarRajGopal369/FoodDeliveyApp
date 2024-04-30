@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* signUp.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    background: url(foodb1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+
+h2 {
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+   
+}
+
+form {
+    max-width: 8cm; /* Reduced max-width */
+    margin: auto;
+    padding: 10px;
+    background-color:#ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease-in-out;
+    
+    
+}
+
+form:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    margin-left: 2px;
+    width: 100px;
+    height: 30px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+span {
+    display: block;
+    margin-top: 6px;
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* Reset some default styles for better consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles with background image */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(foodb1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styles */
+.edit-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency for better visibility */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.edit-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+label {
+    margin-bottom: 6px;
+    color: #555;
+}
+
+/* Input styles */
+input,
+select {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    width: calc(100% - 22px); /* Adjusted width for better alignment */
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Message styles */
+p {
+    color: #e74c3c;
+}
+
+/* Animation styles (example) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation to the form container */
+.edit-form-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Two-column layout for labels and inputs */
+form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Adjust spacing between role label and select */
+form > div:last-child {
+    margin-bottom: 20px;
+}

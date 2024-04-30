@@ -1,0 +1,193 @@
+@charset "UTF-8";
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 160px  1fr  0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* menu */
+#menu{
+    background: rgb(255, 253, 253);
+   
+}
+.brand-logo{
+    padding: 0 30px;
+}
+.brand-logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: -1px;
+    border-radius: 200px;
+}
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 30px;
+    margin: 13px 0;
+    color: rgb(30, 28, 28);
+    font-weight: 300;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3),  inset 10px 10px 20px rgb(208, 210, 208);
+    border-radius: 20px;
+    
+}
+.menu-item a:hover{
+    background: rgb(103, 235, 117);
+}
+
+#food-container{
+    background:white;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: rgb(255, 253, 253);
+    z-index: 1;
+    box-shadow: 15px 20px 20px rgba(79, 78, 78, 0.3),  inset 10px 10px 20px rgb(246, 248, 246);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header .address{
+    font-size: 20px;
+    
+}
+.your-address{
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 120px;
+   padding-left: 20px;
+   margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.add-box i{
+    font-size: 12px;
+}
+.util i,.user i{
+    font-size: 12px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.util i:active{
+    color: white;
+    background: crimson;
+}
+.food-item{
+
+}
+#Caregory-name,.item-menu{
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+}
+#item-card{
+    width: 190px;
+    height: 240px;
+    padding: 2px;
+    margin-left: 15px;
+    margin-right: -10px;
+    margin-bottom: 50px;
+    
+    margin-right: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 10px 10px 20px rgb(229, 232, 229);
+    border-radius: 2px;
+}
+#description {
+    color: #7e7c7c; /* Adjust the color as needed */
+    font-size: 15px; /* Adjust the font size as needed */
+    margin: 3px 0; /* Add some margin for spacing */
+}
+
+#restaurant-content {
+    padding-left: 10%;
+    line-height: 1.0; /* Adjust line height for better readability */
+}
+
+#rating{
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background: rgb(7, 162, 82);
+    font-size: 10px;
+    border-radius: 14px;
+    font-weight: 900;
+}
+.fa-heart-o{
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50px;
+}
+#item-card img{
+   
+    width: 185px;
+    height: 90px;
+    border-radius: 1px;
+   margin-left: 1px;
+    display: block;
+    margin-bottom: 20px;
+    transition: 0.3s all ease-in-out;
+}
+#item-card:hover img{
+    transform: scale(0.9);
+    
+}
+#card-top{
+    
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+.order-button {
+    padding: 7px 15px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+    transform: scale(1.05); /* Scale the button on hover */
+}
+
+.order-button:active {
+    transform: scale(0.95); /* Scale the button on click */
+}

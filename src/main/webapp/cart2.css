@@ -1,0 +1,219 @@
+@charset "UTF-8";
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 160px  1fr  0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* menu */
+#menu{
+    background: rgb(255, 253, 253);
+   
+}
+.brand-logo{
+    padding: 0 30px;
+}
+.brand-logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: -1px;
+    border-radius: 200px;
+}
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 30px;
+    margin: 13px 0;
+    color: rgb(30, 28, 28);
+    font-weight: 300;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3),  inset 10px 10px 20px rgb(208, 210, 208);
+    border-radius: 20px;
+    
+}
+.menu-item a:hover{
+    background: rgb(103, 235, 117);
+}
+
+#food-container{
+    background:white;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: rgb(255, 253, 253);
+    z-index: 1;
+    box-shadow: 15px 20px 20px rgba(79, 78, 78, 0.3),  inset 10px 10px 20px rgb(246, 248, 246);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header .address{
+    font-size: 20px;
+    
+}
+.your-address{
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 120px;
+   padding-left: 20px;
+   margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.add-box i{
+    font-size: 12px;
+}
+.util i,.user i{
+    font-size: 12px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.util i:hover{
+    color: white;
+    background: crimson;
+}
+.food-item{
+
+}
+#Caregory-name,.item-menu{
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+}
+
+
+
+
+/* customised css*/
+.container2 {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #b0b0b0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s; /* Add transition for scaling effect */
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    max-width: 100px;
+    margin-right: 15px;
+    border-radius: 25px;
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.icon1 {
+    margin-left: auto;
+}
+
+.card button.update-btn {
+    background-color: #40e359;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 8px; /* Adjust the value as needed */
+}
+
+.card button.remove-btn {
+    background-color: #e01c1c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 8px; /* Adjust the value as needed */
+}
+
+.add-more-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout-btn {
+    background-color: #3a86dc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-more-btn:hover,
+.checkout-btn:hover {
+    transform: scale(1.01);
+}
+
+
+
+
+
+
